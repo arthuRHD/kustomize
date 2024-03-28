@@ -2,8 +2,8 @@ resources:
   - "../base"
 
 patches:
-  - deployment.yaml
-  - deployment.jsonpatch.yaml
+  - path: deployment.yaml
+  - path: deployment.jsonpatch.yaml
     target:
       kind: Deployment
       name: clinic-deploy
